@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AYAN_HACKS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+    video.bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      top: 30%;
+      color: #fff;
+    }
+    h1 {
+      font-size: 3em;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #ddd;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #0ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #0ff;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="bg-video" id="bgVideo">
+    <source src="bg.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <div class="overlay"></div>
+  
+  <div class="content">
+    <h1>AYAN_HACKS</h1>
+    <p>Welcome to the neon zone!</p>
+    <a href="#" class="btn">Explore Now</a>
+  </div>
+</body>
+</html>
